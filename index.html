@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Веб-сервіси для дидактичних матеріалів</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+    --bg-main: #fdfcfb;
+    --card-bg: #ffffff;
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --accent-second: #c2410c;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    padding: 70px 20px 60px;
+    background:
+        radial-gradient(circle at top left, #ccfbf1, transparent 60%),
+        radial-gradient(circle at bottom right, #fde68a, transparent 55%);
+}
+
+header h1 {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    font-size: 2.6rem;
+}
+
+header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    max-width: 1100px;
+    margin: -25px auto 0;
+    background: var(--card-bg);
+    padding: 15px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+nav a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Section */
+section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+.card {
+    background: var(--card-bg);
+    border-radius: 22px;
+    padding: 30px 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25px;
+    bottom: 25px;
+    width: 6px;
+    border-radius: 6px;
+    background: var(--accent);
+}
+
+/* Service title */
+.service-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.service-title:hover {
+    color: var(--accent-second);
+}
+
+.card p {
+    margin-top: 15px;
+    color: var(--text-main);
+}
+
+/* Footer */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+.service-icon {
+    width: 100px;       
+    height: 100px;
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Веб-сервіси для створення дидактичних матеріалів</h1>
+    <p>
+        Теоретичний аналіз можливостей сучасних веб-сервісів та приклади
+        їх практичного використання для створення інтерактивних вправ
+        з інформатики.
+    </p>
+</header>
+
+<nav>
+    <a href="index.html">Опис сервісів</a>
+    <a href="tasks.html">Алгоритми та вправи</a>
+</nav>
+
+<section>
+    <h2>Характеристика використаних веб-сервісів</h2>
+
+    <div class="card">
+        <a class="service-title" href="tasks.html#xmind">
+		<img src="images/xmindLogo.jpg" class="service-icon">
+		XMind
+		</a>
+         <p>
+			XMind — це веб- та десктопний сервіс для створення ментальних карт, який широко застосовується в освітньому процесі для структурування навчальної інформації. 
+			Його використання дозволяє представити складний теоретичний матеріал у вигляді наочної схеми, де чітко простежуються логічні зв’язки між поняттями.
+			Використання XMind сприяє розвитку системного мислення учнів, формуванню вміння аналізувати та узагальнювати інформацію, а також полегшує запам’ятовування матеріалу завдяки кольорам, іконкам та ієрархічній структурі. 
+			До переваг сервісу можна віднести можливість візуалізувати складні структури, підтримку іконок та кольорів, експорт у різні формати та спільну роботу з іншими користувачами. 
+			Недоліки: повна версія є платною (Pro), деякі функції складні для новачків і частина онлайн-версії доступна лише після реєстрації.
+		 </p>
+    </div>
+
+    <div class="card">
+        <a class="service-title" href="tasks.html#learningapps">
+		<img src="images/learningappsLogo.png" class="service-icon">
+		LearningApps</a>
+        <p>
+		LearningApps — це онлайн-платформа для створення інтерактивних дидактичних вправ, орієнтована на активну взаємодію учнів з матеріалом. 
+		Сервіс підтримує різні типи завдань: класифікацію, відповідність, заповнення пропусків тощо. 
+		Серед переваг — миттєвий зворотний зв’язок, який дозволяє учням перевіряти правильність виконання завдань, підвищує мотивацію до навчання та формує навички самоконтролю. 
+		Недоліки: обмежені налаштування для деяких шаблонів, складність у створенні дуже великих комплексних вправ, потреба у стабільному інтернет-з’єднанні.
+		</p>
+    </div>
+
+    <div class="card">
+        <a class="service-title" href="tasks.html#genially">
+		<img src="images/geniallyLogo.png" class="service-icon">
+		Genially</a>
+          <p>
+			Genially — сучасний сервіс для створення інтерактивних плакатів, презентацій та зображень. 
+			Він дозволяє перетворити традиційні статичні матеріали на інтерактивні об’єкти, з якими учні активно взаємодіють. 
+			Переваги: підтримка анімацій, спливаючих вікон, інтерактивних міток (hotspots), стимулювання самостійного дослідження та пізнавальної активності. 
+			Недоліки: повна функціональність доступна лише у платній версії, іноді складний інтерфейс для новачків.
+		  </p>
+    </div>
+
+    <div class="card">
+        <a class="service-title" href="tasks.html#tiki">
+		<img src="images/tikiLogo.jpg" class="service-icon">
+		Tiki-Toki</a>
+        <p>
+		Tiki-Toki — онлайн-сервіс для створення інтерактивних таймлайнів, що поєднують текст, фото та мультимедіа. 
+		Він зручний для демонстрації історії, еволюції технологій або послідовності подій. 
+		Переваги: наочна демонстрація процесів, можливість додавати фото та медіа, інтерактивне дослідження історії учнями. 
+		Недоліки: обмежена кількість таймлайнів у безкоштовній версії, частина функцій доступна лише після оплати, потребує стабільного інтернет-з’єднання.
+		</p>
+    </div>
+</section>
+
+<footer>
+© 2026 Медвєдєва О.Г.
+</footer>
+
+</body>
+</html>

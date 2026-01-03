@@ -1,0 +1,181 @@
+:root {
+    --bg-main: #fdfcfb;
+    --card-bg: #ffffff;
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --accent-second: #c2410c;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+header {
+    padding: 70px 20px 60px;
+    background:
+        radial-gradient(circle at top left, #ccfbf1, transparent 60%),
+        radial-gradient(circle at bottom right, #fde68a, transparent 55%);
+}
+
+header h1 {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    font-size: 2.6rem;
+}
+
+header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+nav {
+    max-width: 1100px;
+    margin: -25px auto 0;
+    background: var(--card-bg);
+    padding: 15px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+nav a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 22px;
+    padding: 30px 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25px;
+    bottom: 25px;
+    width: 6px;
+    border-radius: 6px;
+    background: var(--accent);
+}
+
+.service-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.service-title:hover {
+    color: var(--accent-second);
+}
+
+.card p {
+    margin-top: 15px;
+    color: var(--text-main);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.task-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.task-text {
+    flex: 2;
+}
+
+.task-image {
+    flex: 1;
+}
+
+.task-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 14px;
+	
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.service-icon {
+    width: 24px;       
+    height: 24px;
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+.pros-cons {
+  display: flex;
+  gap: 40px; /* відстань між перевагами і мінусами */
+  margin-top: 20px;
+  flex-wrap: wrap; /* щоб на маленьких екранах списки ставали один під одним */
+}
+
+.pros, .cons {
+  flex: 1; /* обидві колонки займають однакову ширину */
+  min-width: 250px; /* мінімальна ширина для колонки */
+}
+
+.pros h3, .cons h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}

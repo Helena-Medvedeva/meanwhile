@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Алгоритми та інтерактивні вправи</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Layout for tasks page */
+.task-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.task-text {
+    flex: 2;
+}
+
+.task-image {
+    flex: 1;
+}
+
+.task-image img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Алгоритми створення інтерактивних вправ</h1>
+    <p>
+        Покроковий опис створення навчальних матеріалів у веб-сервісах
+        та посилання на готові інтерактивні вправи.
+    </p>
+</header>
+
+<nav>
+    <a href="index.html">Опис сервісів</a>
+    <a href="tasks.html">Алгоритми та вправи</a>
+</nav>
+
+<section>
+<h2>Інтерактивні вправи та алгоритми створення</h2>
+
+<!-- XMind -->
+<div class="card" id="xmind">
+    <div class="task-layout">
+        <div class="task-text">
+            <a class="service-title">XMind – Ментальна карта «Основні складові ПК»</a>
+            <p><strong>Мета:</strong> Систематизація знань про архітектуру комп’ютера та візуалізація зв’язків між компонентами.</p>
+            <p><strong>Алгоритм створення:</strong></p>
+            <ol>
+                <li>Відкрити XMind (онлайн або десктопну версію).</li>
+                <li>Створити нову карту. Центральна тема: <strong>«Персональний комп’ютер»</strong>.</li>
+                <li>Додати гілки першого рівня: <strong>Системний блок</strong>, <strong>Периферійні пристрої</strong>, <strong>Додаткові пристрої</strong>.</li>
+                <li>Додати підкатегорії: наприклад, Системний блок → Процесор, Материнська плата, Відеокарта.</li>
+                <li>Застосувати кольорове кодування гілок і додати іконки (Insert → Icon).</li>
+                <li>Переглянути карту у режимі Presentation Mode.</li>
+                <li>Поділитися карткою: Share → Link або Export → PNG/PDF.</li>
+            </ol>
+            <p>
+                <a class="service-title" href="https://app.xmind.com/share/kbQdLvwl?xid=MjY9an4e" target="_blank">
+                    Перейти до вправи →
+                </a>
+            </p>
+        </div>
+        <div class="task-image">
+		<a href="#lightbox-xmind">
+            <img src="images/xmind.png" alt="Ментальна карта XMind">
+		</a>
+        </div>
+    </div>
+</div>
+<!-- Модальне вікно -->
+<div id="lightbox-xmind" class="lightbox">
+  <a href="#xmind"><img src="images/xmind.png" alt="XMind"></a>
+</div>
+
+<!-- LearningApps -->
+<div class="card" id="learningapps">
+    <div class="task-layout">
+        <div class="task-text">
+            <a class="service-title">LearningApps – «Пристрої введення та виведення»</a>
+            <p><strong>Мета:</strong> Відпрацювання навичок класифікації пристроїв ПК.</p>
+            <p><strong>Алгоритм створення:</strong></p>
+            <ol>
+                <li>Увійти на LearningApps.org.</li>
+                <li>Обрати шаблон: Create App → Group Assignment (Сортування картинок).</li>
+                <li>Створити дві групи: <strong>Введення</strong> та <strong>Виведення</strong>.</li>
+                <li>Додати картинки пристроїв (клавіатура, миша, монітор, принтер, сканер) через Add Media → Upload Image.</li>
+                <li>Призначити кожну картинку до групи (Assign → Input / Output).</li>
+                <li>Налаштувати повідомлення про успіх / помилку (Settings → Feedback → Correct / Incorrect).</li>
+                <li>Зберегти вправу: Save → Share → Copy Link.</li>
+            </ol>
+            <p>
+                <a class="service-title" href="https://learningapps.org/watch?v=pf3827quk25" target="_blank">
+                    Перейти до вправи →
+                </a>
+            </p>
+        </div>
+        <div class="task-image">
+		<a href="#lightbox-learningapps">
+            <img src="images/learningapps.png" alt="Вправа LearningApps">
+		</a>
+        </div>
+    </div>
+</div>
+<!-- Модальне вікно -->
+<div id="lightbox-learningapps" class="lightbox">
+  <a href="#learningapps"><img src="images/learningapps.png" alt="LearningApps"></a>
+</div>
+ 
+<!-- Genially -->
+<div class="card" id="genially">
+    <div class="task-layout">
+        <div class="task-text">
+            <a class="service-title">Genially – Інтерактивний плакат «Види комп’ютерів»</a>
+            <p><strong>Мета:</strong> Ознайомлення з різновидами сучасної обчислювальної техніки.</p>
+            <p><strong>Алгоритм створення:</strong></p>
+            <ol>
+                <li>Авторизуватися на Genially.</li>
+                <li>Create → Interactive Image.</li>
+                <li>Завантажити фон: колаж із різних типів комп’ютерів.</li>
+                <li>Додати Hotspots на кожен об’єкт (Add Interaction → Popup).</li>
+                <li>Заповнити спливаючі вікна описом та цікавими фактами.</li>
+                <li>Додати анімації для Entrance/Exit у спливаючих вікнах.</li>
+                <li>Переглянути в режимі Preview → Share → Copy Link.</li>
+            </ol>
+            <p>
+                <a class="service-title" href="https://view.genially.com/6949ea554034d0801186baae/interactive-image-vidi-pk-interactive-image" target="_blank">
+                    Перейти до вправи →
+                </a>
+            </p>
+        </div>
+        <div class="task-image">
+		<a href="#lightbox-genially">
+            <img src="images/genially.png" alt="Інтерактивний плакат Genially">
+		</a>
+        </div>
+    </div>
+</div>
+<!-- Модальне вікно -->
+<div id="lightbox-genially" class="lightbox">
+  <a href="#genially"><img src="images/genially.png" alt="Genially"></a>
+</div>
+
+<!-- Tiki-Toki -->
+<div class="card" id="tiki">
+    <div class="task-layout">
+        <div class="task-text">
+            <a class="service-title">Tiki-Toki – Стрічка часу «Історія комп’ютерної техніки»</a>
+            <p><strong>Мета:</strong> Формування уявлення про хронологію розвитку ЕОМ.</p>
+            <p><strong>Алгоритм створення:</strong></p>
+            <ol>
+                <li>Зареєструватися на Tiki-Toki.</li>
+                <li>Create → New Timeline.</li>
+                <li>Встановити часовий діапазон: 1642р. - 2025р.</li>
+                <li>Додати події для кожного покоління ЕОМ (I – лампи, II – транзистори тощо).</li>
+                <li>Додати фото та опис для кожної події (Create new story → Title / Date / Intro / Media / Extra info).</li>
+                <li>Додати мультимедіа: відео, зображення для інтерактивності.</li>
+                <li>Preview → Share → Copy Link.</li>
+            </ol>
+            <p>
+                <a class="service-title" href="https://www.tiki-toki.com/timeline/entry/2221342/-/" target="_blank">
+                    Перейти до вправи →
+                </a>
+            </p>
+        </div>
+        <div class="task-image">
+		<a href="#lightbox-tiki">
+            <img src="images/tiki.png" alt="Стрічка часу Tiki-Toki">
+		</a>
+        </div>
+    </div>
+</div>
+<!-- Модальне вікно -->
+<div id="lightbox-tiki" class="lightbox">
+  <a href="#tiki"><img src="images/tiki.png" alt="tiki-toki"></a>
+</div>
+
+</section>
+
+<footer>
+    © 2026 Медвєдєва О.Г.
+</footer>
+
+</body>
+</html>
