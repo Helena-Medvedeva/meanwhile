@@ -163,19 +163,5 @@ footer {
     vertical-align: middle; 
     margin-right: 8px; 
 }
-.pros-cons {
-  display: flex;
-  gap: 40px; /* відстань між перевагами і мінусами */
-  margin-top: 20px;
-  flex-wrap: wrap; /* щоб на маленьких екранах списки ставали один під одним */
-}
 
-.pros, .cons {
-  flex: 1; /* обидві колонки займають однакову ширину */
-  min-width: 250px; /* мінімальна ширина для колонки */
-}
 
-.pros h3, .cons h3 {
-  margin-bottom: 10px;
-  color: var(--accent);
-}
