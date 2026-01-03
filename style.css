@@ -163,5 +163,26 @@ footer {
     vertical-align: middle; 
     margin-right: 8px; 
 }
+.service-links {
+    margin-top: 12px;
+}
+
+.service-links a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 6px 12px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.service-links a:hover {
+    background: var(--accent);
+    color: white;
+}
+
 
 
